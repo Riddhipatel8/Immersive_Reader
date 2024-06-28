@@ -9,9 +9,9 @@ load_dotenv()
 app = Flask(__name__)
 
 # Get Azure credentials from environment variables
-AZURE_CLIENT_ID = os.getenv('AZURE_CLIENT_ID')
-AZURE_CLIENT_SECRET = os.getenv('AZURE_CLIENT_SECRET')
-AZURE_TENANT_ID = os.getenv('AZURE_TENANT_ID')
+AZURE_CLIENT_ID = os.environ.get('AZURE_CLIENT_ID')
+AZURE_CLIENT_SECRET = os.environ.get('AZURE_CLIENT_SECRET')
+AZURE_TENANT_ID = os.environ.get('AZURE_TENANT_ID')
 AZURE_RESOURCE = 'https://cognitiveservices.azure.com/.default'
 
 @app.route('/')
