@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immersive Reader</title>
+    <script type='text/javascript' src='https://ircdname.azureedge.net/immersivereadersdk/immersive-reader-sdk.1.4.0.js'></script>
+</head>
+<body>
+    <h1>Immersive Reader Demo</h1>
+    <!-- The button with id 'immersiveReaderButton' -->
+    <button id="immersiveReaderButton">Launch Immersive Reader</button>
+    <!-- The paragraph with id 'contentToRead' -->
+    <p id="contentToRead">This is some text to be read by the Immersive Reader.</p>
+    <script type='text/javascript' src="{{ url_for('static', filename='helpers.js') }}"></script>
+</body>
+</html>
